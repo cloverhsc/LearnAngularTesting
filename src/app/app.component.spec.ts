@@ -30,3 +30,25 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!!');
   }));
 });
+
+function helloWorld() {
+  return 'Hello World';
+}
+
+describe('Hello world', () => {
+
+  let expected = '';
+
+  beforeEach(() => {
+    expected = 'Hello World';
+  });
+
+  afterEach(() => {
+    expected = '';
+  });
+
+  it('says hello', () => {
+    expect(helloWorld())
+      .toEqual(expected);
+  });
+});
