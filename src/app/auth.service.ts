@@ -5,7 +5,11 @@ export class AuthService {
 
   constructor() { }
 
-  isAuthenticated(): boolean{
-    return !!localStorage.getItem('token')
+  isAuthenticated(): Promise<boolean> {
+    return Promise.resolve(!!localStorage.getItem('token'));
+  }
+
+  isAuthenticated2(): string {
+    return 'Original';
   }
 }

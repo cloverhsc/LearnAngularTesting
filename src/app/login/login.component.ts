@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -8,14 +8,17 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  needsLogin = true;
   constructor(private auth: AuthService) {
   }
 
   ngOnInit() {
+    this.auth.isAuthenticated().then((authenticated) => {
+      this.needsLogin = ! authenticated;
+    })
   }
 
-  needsLogin() {
-    return !this.auth.isAuthenticated();
-  }
-
+  // needsLogin() {
+  //   return !this.auth.isAuthenticated();
+  // }
 }
