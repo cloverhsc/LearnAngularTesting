@@ -1,7 +1,9 @@
+
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+// import { Login2Component } from './login2/login2.component';
 import { AuthService } from './auth.service';
 
 describe('AppComponent', () => {
@@ -9,7 +11,8 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        LoginComponent
+        LoginComponent,
+        // Login2Component
       ],
       providers: [AuthService]
     }).compileComponents();

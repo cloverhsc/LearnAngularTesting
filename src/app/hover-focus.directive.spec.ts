@@ -5,7 +5,7 @@ import { By } from '@angular/platform-browser';
 import { HoverFocusDirective } from './hover-focus.directive';
 
 @Component({
-  template: `<input type='text' hoverfocus>`
+  template: `<input type='text' appHoverFocus>`
 })
 
 class TestHoverFocusComponent { }
