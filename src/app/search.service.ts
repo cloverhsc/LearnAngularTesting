@@ -7,7 +7,7 @@ export class SearchItem {
     public name: string,
     public artist: string,
     public thumbnail: string,
-    public artistId: string
+    public artistId: number
   ) {}
 }
 @Injectable()
@@ -28,7 +28,7 @@ export class SearchService {
         res => {  // success
           this.results = res.json().results.map(
             item => {
-              console.log(item);
+              // console.log(item);
               return new SearchItem(
                 item.trackName,
                 item.artistName,

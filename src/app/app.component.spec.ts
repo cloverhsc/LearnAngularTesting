@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 // import { Login2Component } from './login2/login2.component';
 import { AuthService } from './auth.service';
 
-describe('AppComponent', () => {
+/* describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
@@ -36,7 +36,7 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!!');
   }));
-});
+}); */
 
 function helloWorld() {
   return 'Hello World';

@@ -21,7 +21,7 @@ export class Login2Component implements OnInit {
   }
 
   login(email, password) {
-    console.log(`Login ${email} ${password}`);
+    // console.log(`Login ${email} ${password}`);
     if (email && password) {
       console.log(`Emitting`);
       this.loggedIn.emit(new User(email, password));

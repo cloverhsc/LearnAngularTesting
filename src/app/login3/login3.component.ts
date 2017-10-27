@@ -30,7 +30,7 @@ export class Login3Component implements OnInit {
   }
 
   login() {
-    console.log(`Login3 ${this.form.value}`);
+    // console.log(`Login3 ${this.form.value}`);
     if (this.form.valid) {
       this.loggedIn.emit(
         new User (

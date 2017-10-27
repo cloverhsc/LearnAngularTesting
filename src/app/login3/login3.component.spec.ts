@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators,
   ReactiveFormsModule, FormsModule, FormControl } from '@angular/forms';
 
 import { Login3Component } from './login3.component';
+import { User } from './../login2/login2.component';
 
 describe('Login3Component', () => {
   let component: Login3Component;
